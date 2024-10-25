@@ -1,25 +1,89 @@
 <html>
-    <body>
-        <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
-        <form>
-            <div>
-                <h4>Primer, explica'ns qui ets</h4>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" value=""><br>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido"><br>
-                <label for="edat">Edat</label>
-                <input type="number" id="edat" name="edat"><br>
-            </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cdafe0;
+        }
+        form {
+            padding: 10px;
+            background-color: #d4b695;
             
-            <div>
-                <h4>Quin cicle estàs estudiant?</h4>
-                <input type="radio" id="DAM" name="DAM" value="value">
-                <label for="DAM">DAM</label><br>
+        }
+        
+        textarea {
+            width: 300px;
+            padding: 8px;
+            margin-top: 5px;
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: darkorange;
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            padding: 15px;
+            margin-top: 15px;
+            width: 100px;
+            font-size: 12px;
+        }
+        
+        input[type="text"], input[type="number"] {
+            display: inline-block;
+        }
+        
+    </style>
+    <body>
+        <form action="/img/que_en_penses_enviat.html"> 
+            <h1 style="color: rgb(211, 119, 6);" style="border: 10px solid black;">Subscriu-te al noticiari ITIC Barcelona</h1>
+            
+            <h4>Primer, explica'ns qui ets</h4>
+            <label for="Email">Email</label> 
+            <input type="text" id="Email" name="Email"><br>
+            <label for="nomIcognom">Nom i cognoms</label>
+            <input type="text" id="nomIcognom" name="nomIcognom" value=""><br>
+            <label for="edat">Edat</label> 
+            <input type="number" id="edat" name="edat"><br>
+
+            
+            <h4>Quin cicle estàs estudiant?</h4>
+            <input type="radio" id="DAM" name="cicle" >
+            <label for="DAM">DAM</label><br>
+
+            <input type="radio" id="ASIX" name="cicle" >
+            <label for="ASIX">ASIX</label><br>
+
+            <input type="radio" id="DAW" name="cicle" >
+            <label for="DAW">DAW</label><br>
+                
+            <label for="curs">I en quin curs?</label>
+            <select id="curs" name="curs">
+            <option value="Primer">Primer</option>
+            <option value="Segon">Segon</option> 
+            </select> 
+                
 
 
 
-            </div>
+            <div style="padding-bottom: 20px;">
+            <h4>Marca els temes que vulguis estar sempre al dia!</h4>
+                
+            <input type="checkbox" id="artificial" name="artificial">
+            <label for="artificial">Intel·ligència artificial</label> <br>
+                    
+            <input type="checkbox" id="computacio" name="computacio">
+            <label for="computacio">Computació quàntica</label><br>
+
+            <input type="checkbox" id="supercomputadors" name="supercomputadors">
+            <label for="supercomputadors">Supercomputadors</label><br>
+
+            <input type="checkbox" id="recerca" name="recerca">
+            <label for="recerca">Recerca en algorísmia</label><br>
+            </div>                
+          
+            <label>Hi ha algun tema mést t'interessi? Explica'ns-ho!</h5><br>
+            <textarea name="temainteres" id="temainteres"  placeholder="També m'agradaria saber les últimes novetats sobre..."></textarea><br>
+            <input type="submit" value="Subscriu-me">
+        </form>            
+                        
 
 
 
@@ -31,7 +95,20 @@
 
 
 
-        </form>
+
+
+           
+
+
+
+
+
+
+
+
+
+
+       
     
     </body>
 
