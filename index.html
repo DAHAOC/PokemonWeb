@@ -1,56 +1,174 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>Pokemon</title>
-<style>
-    
-    .topnav {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    } 
-    body {
-        margin: 0;
-    }
-
-    .header {
-        background-color:white ;
-        padding: 20px;
-        text-align: center;
-    }
-</style>
+    <div style="text-align: center;">
+        <img src ="./img/logo_pokemon.png" width="400" height="150">
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        div div{
+            /*display: flex;*/  
+            /*width: 49%;*/
+        }
+    </style>
 </head>
-<body>
-    <div class="header">
-        <img src="./img/logo_pokemon.png" width="400" height="150">
+<body>  
+   
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pokedex">Pokédex</a>
+        <a href="#battles">Battles</a>
+        <a href="#community">Community</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to the ultimate Pokémon fan portal! Explore the world of Pokémon, build your teams, and connect with other trainers.</p>
+            <div style="text-align: center;">   
+            <img src="https://example.com/pokemon-image.jpg" alt="Pokémon Home">
+        </div>
+ 
+        </div>
+        <div id="pokedex" class="section" style="display: flex;" style="order: 1;">
+            <h2>Pokédex</h2>
+            <p>La Pokédex es una enciclopedia electrónica que recopila información detallada sobre los Pokémon. Cada entrada describe características como el tipo, habilidades, comportamiento y evolución de cada Pokémon. Es una herramienta esencial para los entrenadores en su aventura para capturar y conocer mejor a los Pokémon.</p>
+        </div>
+        <div style="display: flex" style="order: 2;">  
+            <img src ="./img/pokedex.png" alt="Pokédex" width="400" height="150">
+        </div>
+        <div id="battles" class="section">
+            <h2>Battles</h2>
+            <p>Test your skills with our battle simulator or create your dream team!</p>
+            <div style="display: inline-block;">  
+            <img src ="./img/combate.png" alt="Battles" width="400" height="150">
+            </div>
+            <h3>Efectividad de Tipos de Ataque</h3>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Tipo de Ataque</th>
+                    <th>Fuerte Contra</th>
+                    <th>Débil Contra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fuego</td>
+                        <td>Planta, Bicho, Hielo</td>
+                        <td>Agua, Roca</td>
+                    </tr>
+                    <tr>
+                        <td>Agua</td>
+                        <td>Fuego, Roca, Tierra</td>
+                        <td>Eléctrico, Planta</td>
+                    </tr>
+                    <tr>
+                        <td>Eléctrico</td>
+                        <td>Agua, Volador</td>
+                        <td>Tierra</td>
+                </tr>
+                <tr>
+                    <td>Planta</td>
+                    <td>Agua, Tierra, Roca</td>
+                    <td>Fuego, Volador, Bicho</td>
+            </tr>
+        <tr>
+            <td>Roca</td>
+            <td>Fuego, Volador, Bicho</td>
+            <td>Agua, Planta</td>
+        </tr>
+    </tbody>
+</table>
 
-   </div>
 
-
-    <div class="topnav">
-        
-        <a href="#">Inicio</a>
-        <a href="#">Pokedex</a>
-        <a href="#">Juegos</a>
-      </div>
-    
-
-<img src="img/pokemon2.jpeg" width="" height="1080px">
-
-
-
-
+            
+        </div>
+        <div id="community" class="section">
+            <h2>Community</h2>
+            <p>Join discussions with other trainers, share your adventures, and trade Pokémon.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Imad & Dahao</p>
+    </footer>
+</body>
+</html>
 
 
 
@@ -63,6 +181,87 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
 
 
 
