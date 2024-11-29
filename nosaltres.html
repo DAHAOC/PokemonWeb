@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Fan Nosaltres</title>
+    <link rel="stylesheet" href="/css/estil.css"> <!-- Importa tu archivo CSS externo -->
+    <style>
+        /* Estilos adicionales si es necesario */
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card-name {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera con logo -->
+    <header>
+        <img src="/img/logo_pokemon.png">
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/">Pokédex</a>
+        <a href="#battles">Battles</a>
+        <a href="#community">Community</a>
+        
+    </nav>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="card-container">
+        <!-- Primera tarjeta -->
+        <div class="card">
+            <img src="/img/Charmander_AG_anime.png" alt="John Smith">
+            <div class="card-name">Imad Ouadi</div>
+        </div>
+        <!-- Segunda tarjeta -->
+        <div class="card">
+            <img src="/img/007.png" alt="Maria Smith">
+            <div class="card-name">Dahao Chen</div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Imad & Dahao</p>
+    </footer>
+</body>
+</html>
