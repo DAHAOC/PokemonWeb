@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="/css/estil.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .pokedex-grid {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .pokemon-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+           
+            text-align: center;
+            padding: 20px;
+        }
+
+        .pokemon-card img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="./img/logo_pokemon.png" alt="Pokémon Logo">
+    </header>
+
+    
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/pokedex.html">Pokédex</a>
+        <a href="/battle.html">Combates</a>
+        <a href="/comunidad.html">Comunidad</a>
+        <a href="/contacto.html">Contactos</a>
+        <a href="/nosaltres.html">Nosotros</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Pokédex</h2>
+        <p>La Pokédex es una enciclopedia electrónica donde puedes encontrar toda la información sobre los Pokémon. ¡Descubre sus tipos, habilidades y evoluciones aquí!</p>
+        
+        
+        <div class="pokedex-grid">
+            
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                <h3>Bulbasaur</h3>
+                <p>Tipo: Planta / Veneno</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                <h3>Charmander</h3>
+                <p>Tipo: Fuego</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                <h3>Squirtle</h3>
+                <p>Tipo: Agua</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu">
+                <h3>Pikachu</h3>
+                <p>Tipo: Eléctrico</p>
+            </div>
+        </div>
+
+      
+        <h3 style="text-align: center; margin-top: 40px;">Efectividad de Tipos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Fuerte Contra</th>
+                    <th>Débil Contra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fuego</td>
+                    <td>Planta, Bicho, Hielo</td>
+                    <td>Agua, Roca</td>
+                </tr>
+                <tr>
+                    <td>Agua</td>
+                    <td>Fuego, Roca, Tierra</td>
+                    <td>Eléctrico, Planta</td>
+                </tr>
+                <tr>
+                    <td>Eléctrico</td>
+                    <td>Agua, Volador</td>
+                    <td>Tierra</td>
+                </tr>
+                <tr>
+                    <td>Planta</td>
+                    <td>Agua, Tierra, Roca</td>
+                    <td>Fuego, Volador, Bicho</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+    <footer>
+        <p>© 2024 Imad & Dahao</p>
+    </footer>
+</body>
+</html>
